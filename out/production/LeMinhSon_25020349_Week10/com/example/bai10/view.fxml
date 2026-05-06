@@ -7,7 +7,7 @@
 <StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.bai10.Controller" stylesheets="@style.css" styleClass="root-pane">
     <VBox alignment="CENTER" maxWidth="450.0" maxHeight="550.0" styleClass="glass-container" spacing="20">
 
-        <Text text="Dinh Minh ne!" styleClass="app-title"/>
+        <Text text="UetDoran" styleClass="app-title"/>
         <Label text="HỆ THỐNG ĐĂNG KÝ NÂNG CAO" style="-fx-text-fill: #aaa; -fx-font-size: 14px; -fx-padding: -15 0 10 0;"/>
 
         <GridPane hgap="15" vgap="5" alignment="CENTER">
