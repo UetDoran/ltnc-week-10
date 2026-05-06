@@ -1,0 +1,93 @@
+.root-pane {
+    -fx-background-image: url('background.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.glass-container {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 25;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-radius: 25;
+    -fx-border-width: 1.5;
+    -fx-padding: 40;
+    -fx-spacing: 25;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI', system-ui;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 1);
+}
+
+.title-text {
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 10, 0, 0, 2);
+}
+
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-prompt-text-fill: #cccccc;
+}
+
+.text-field:focused {
+    -fx-border-color: #5eba22;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary {
+    -fx-background-color: #5eba22;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 30;
+    -fx-padding: 12 40 12 40;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 4);
+}
+
+.btn-primary:hover {
+    -fx-background-color: #6ed42b;
+}
+
+.check-box .box {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+}
+
+.check-box .mark {
+    -fx-background-color: white;
+}
+
+.check-box {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 1);
+}
+.app-title {
+    -fx-view-order: -1;
+
+    -fx-fill: #ffffff;
+
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Segoe UI Semibold';
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.85), 8, 0, 0, 2);
+}
+
+.app-title:hover {
+    -fx-fill: white;
+    -fx-cursor: hand;
+}

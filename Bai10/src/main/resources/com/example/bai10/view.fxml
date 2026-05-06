@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.bai10.Controller" stylesheets="@style.css" styleClass="root-pane">
+    <VBox alignment="CENTER" maxWidth="450.0" maxHeight="550.0" styleClass="glass-container" spacing="20">
+
+        <Text text="UetDoran" styleClass="app-title"/>
+        <Label text="HỆ THỐNG ĐĂNG KÝ NÂNG CAO" style="-fx-text-fill: #aaa; -fx-font-size: 14px; -fx-padding: -15 0 10 0;"/>
+
+        <GridPane hgap="15" vgap="5" alignment="CENTER">
+            <Label text="Họ tên:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+            <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="5">
+                <TextField fx:id="nameField" promptText="Nhập họ tên của bạn..." prefWidth="250.0" onKeyPressed="#handleEnterKey"/>
+                <Label fx:id="errorLabel" style="-fx-text-fill: #ff4d4d; -fx-font-size: 11px; -fx-font-weight: bold;" text=""/>
+            </VBox>
+        </GridPane>
+
+        <CheckBox fx:id="statusCheck" text="Đồng ý với các điều khoản dịch vụ." styleClass="check-box"/>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button text="GỬI (Ctrl+S)" onAction="#onSaveButtonClick" styleClass="btn-primary" prefWidth="150.0"/>
+            <Button text="TẢI DỮ LIỆU" onAction="#onLoadButtonClick"
+                    style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 30; -fx-text-fill: white;"
+                    prefWidth="150.0"/>
+        </HBox>
+
+    </VBox>
+
+    <ProgressIndicator fx:id="progressIndicator" visible="false" maxWidth="60" maxHeight="60" />
+</StackPane>
